@@ -251,4 +251,48 @@ nav .links-container .auth-buttons button:nth-of-type(1) {
     align-items: flex-start;
     gap: 2rem;
   }
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin: 10rem 0;
+  padding: 0 10rem;
+}
+.services .service {
+  display: flex;
+  gap: 5rem;
+}
+.services .service .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+.services .service .content .title {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+.services .service .content .description {
+  color: var(--secondary-color);
+  line-height: 1.5rem;
+}
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+  .services {
+    padding: 0 1.3rem;
+    text-align: start;
+  }
+  .services .title-container .description {
+    padding: 0;
+  }
+  .services .service {
+    flex-direction: column;
+  }
+  .services .service .image img {
+    max-inline-size: 100%;
+  }
+  .services .service:nth-of-type(2) {
+    flex-direction: column-reverse;
+  }
 }/*# sourceMappingURL=index.css.map */
