@@ -192,4 +192,63 @@ nav .links-container .auth-buttons button {
 }
 nav .links-container .auth-buttons button:nth-of-type(1) {
   border: none;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin: 5rem 0;
+  justify-content: center;
+  align-content: center;
+  padding: 0 10rem;
+  text-align: center;
+}
+.features .title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.features .title-container .title {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+.features .title-container .description {
+  padding: 0 2rem;
+  color: var(--secondary-color);
+  line-height: 1.5rem;
+}
+.features .content {
+  display: flex;
+  gap: 3rem;
+}
+.features .content .feature {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+.features .content .feature .title {
+  color: var(--primary-color);
+}
+.features .content .feature .description {
+  color: var(--secondary-color);
+  line-height: 1.5rem;
+}
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+  .features {
+    padding: 0 1.3rem;
+    text-align: start;
+  }
+  .features .title-container .description {
+    padding: 0;
+  }
+  .features .content {
+    flex-direction: column;
+  }
+  .features .content .feature {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+  }
 }/*# sourceMappingURL=index.css.map */
