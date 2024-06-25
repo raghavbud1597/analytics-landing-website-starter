@@ -1,0 +1,43 @@
+nav {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  .brand-container {
+    .toggle {
+      display: none;
+    }
+  }
+  .links-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    ul {
+      display: flex;
+      list-style: none;
+      gap: 6rem;
+      li {
+        a {
+          color: var(--secondary-color);
+          text-decoration: none;
+        }
+      }
+    }
+    .auth-buttons {
+      display: flex;
+      gap: 2rem;
+      button {
+        font-family: var(--font-family);
+        background-color: var(--trasnparent);
+        padding: 0.5rem 2rem;
+        border-radius: 2rem;
+        border: 3px solid var(--line);
+        color: var(--secondary-color);
+        cursor: pointer;
+        &:nth-of-type(1) {
+          border: none;
+        }
+      }
+    }
+  }
+}
