@@ -1,0 +1,27 @@
+.home {
+    height: 102vh;
+    background-color: var(--pink);
+    clip-path: polygon(0 0, 100% 0%, 100% 78%, 0% 100%);
+    margin-bottom: 4rem;
+
+    .main-container {
+        height: 100vh;
+        position: relative;
+        background-color: var(--primary-color);
+        clip-path: polygon(0 0, 100% 0%, 100% 78%, 0% 100%);
+        padding: 2rem 10rem;
+        .backgrounds {
+            .background1 {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            .background2 {
+                position: absolute;
+                right: 0;
+                top: 0;
+                height: 100vh;
+            }
+        }
+    }
+}

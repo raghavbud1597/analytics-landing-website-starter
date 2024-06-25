@@ -7,4 +7,97 @@
   --font-family: "Roboto", sans-serif;
   --background: #eff2ff;
   --line: #2a407c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.app {
+  background-color: var(--background);
+  font-family: var(--font-family);
+  position: relative;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  background-color: var(--primary-color);
+  width: 0.2rem;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--pink);
+  border-radius: 1rem;
+}
+
+.home {
+  height: 102vh;
+  background-color: var(--pink);
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 78%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0%, 100% 78%, 0% 100%);
+  margin-bottom: 4rem;
+}
+.home .main-container {
+  height: 100vh;
+  position: relative;
+  background-color: var(--primary-color);
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 78%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0%, 100% 78%, 0% 100%);
+  padding: 2rem 10rem;
+}
+.home .main-container .backgrounds .background1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.home .main-container .backgrounds .background2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+nav .brand-container .toggle {
+  display: none;
+}
+nav .links-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+nav .links-container ul {
+  display: flex;
+  list-style: none;
+  gap: 6rem;
+}
+nav .links-container ul li a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+nav .links-container .auth-buttons {
+  display: flex;
+  gap: 2rem;
+}
+nav .links-container .auth-buttons button {
+  font-family: var(--font-family);
+  background-color: var(--trasnparent);
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+  border: 3px solid var(--line);
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+nav .links-container .auth-buttons button:nth-of-type(1) {
+  border: none;
 }/*# sourceMappingURL=index.css.map */
